@@ -4,13 +4,12 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 //새로 만든 컴포넌트 import
-import ComponentsTest from './components/sample';
 
 import LoginSuin from './pages/Login/suin/Login';
 import LoginHyunwuk from './pages/Login/hyunwuk/Login';
 import LoginSunyeong from './pages/Login/sunyeong/Login';
 
-import ComponentNav from './components/nav';
+import ComponentNav from './components/Nav';
 
 import MainSuin from './pages/Main/suin/Main';
 import MainHyunwuk from './pages/Main/hyunwuk/Main';
@@ -21,7 +20,6 @@ function Router() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/test" element={<ComponentsTest />} />
         <Route path="/nav" element={<ComponentNav />} />
         <Route path="/login-suin" element={<LoginSuin />} />
         <Route path="/login-hyunwuk" element={<LoginHyunwuk />} />
