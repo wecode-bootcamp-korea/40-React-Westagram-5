@@ -1,3 +1,7 @@
+# team 5
+
+윤수인, 윤서정, 배현욱 화이팅!
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

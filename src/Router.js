@@ -1,17 +1,37 @@
 //router 컴포넌트를 만들고 이를 export 해줄것
 
-import React from "react";
-import { BrowserRouter,Routes,Route, Router } from "react-router-dom";
-import Main from "./pages/main/components"
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-function Router () {
-   return (
-     <BrowserRouter>
+//새로 만든 컴포넌트 import
+import ComponentsTest from './components/sample';
+
+import LoginSuin from './pages/Login/suin/Login';
+import LoginHyunwuk from './pages/Login/hyunwuk/Login';
+import LoginSunyeong from './pages/Login/sunyeong/Login';
+
+import ComponentNav from './pages/Main/components/nav';
+
+import MainSuin from './pages/Main/suin/Main';
+import MainHyunwuk from './pages/Main/hyunwuk/Main';
+import MainSunyeong from './pages/Main/sunyeong/Main';
+
+//route 하기
+function Router() {
+  return (
+    <BrowserRouter>
       <Routes>
-       <Route path="" element={<Main/>} />
+        <Route path="/test" element={<ComponentsTest />} />
+        <Route path="/nav" element={<ComponentNav />} />
+        <Route path="/login-suin" element={<LoginSuin />} />
+        <Route path="/login-hyunwuk" element={<LoginHyunwuk />} />
+        <Route path="/login-sunyeong" element={<LoginSunyeong />} />
+        <Route path="/main-suin" element={<MainSuin />} />
+        <Route path="/main-hyunwuk" element={<MainHyunwuk />} />
+        <Route path="/main-sunyeong" element={<MainSunyeong />} />
       </Routes>
-     </BrowserRouter>
-    )
+    </BrowserRouter>
+  );
 }
 
 export default Router;

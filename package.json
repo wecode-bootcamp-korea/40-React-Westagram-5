@@ -11,6 +11,11 @@
     "react-router-dom": "^6.4.3",
     "react-scripts": "5.0.1",
     "sass": "^1.56.1",
+    "stylelint": "^14.15.0",
+    "stylelint-config-prettier-scss": "^0.0.1",
+    "stylelint-config-property-sort-order-smacss": "^9.0.0",
+    "stylelint-config-standard-scss": "^6.1.0",
+    "stylelint-scss": "^4.3.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -38,6 +43,8 @@
     ]
   },
   "devDependencies": {
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "prettier": "^2.7.1"
   }
 }
