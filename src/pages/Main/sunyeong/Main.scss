@@ -1,0 +1,319 @@
+@mixin flex($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin flex($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin padding($top, $right, $left) {
+  padding-top: $top;
+  padding-right: $right;
+  padding-left: $left;
+}
+
+@mixin margin($top, $right, $left) {
+  margin-top: $top;
+  margin-right: $right;
+  margin-left: $left;
+}
+
+@media screen and (max-width: 800px) {
+  .main_right {
+    display: none;
+  }
+}
+
+$textColorGray: gray;
+$gray_border: 1px solid #e9e7e7;
+$bg_white: white;
+
+$textButton_fontSize: 14px;
+$textButton_color: #0090f6;
+
+body {
+  margin: 0;
+  background-color: #fafafa;
+}
+
+.navContainer,
+.feed,
+.main_right_story,
+.recommandForUsers {
+  border: $gray_border;
+}
+
+/* navigation bar */
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  @include padding(0, 20%, 20%);
+  background-color: $bg_white;
+  border: $gray_border;
+
+  .navLeft {
+    @include flex(center, center);
+    .instagram_logo_text {
+      padding-left: 15px;
+      font-family: 'Lobster', cursive;
+      font-size: 20px;
+    }
+    .instagram_logo_img {
+      width: 43px;
+      padding-right: 15px;
+      border-right: 2px solid black;
+    }
+  }
+
+  .navCenter {
+    @include flex(center, center);
+    .inputSearch {
+      margin: 10px 50px;
+      background-color: $bg_white;
+      text-align: center;
+      width: 215px;
+      height: 25px;
+      padding: 3px 10px 3px 26px;
+      color: #8e8e8e;
+      background-color: $bg_white;
+      font-weight: 300;
+      border: $gray_border;
+      border-radius: 3px;
+      /* search icon */
+      background: url('../../../assets/sunyeong/search.png') no-repeat;
+      background-size: 15px;
+      background-position: 78px center;
+      outline: none;
+    }
+    img {
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+  .navRight {
+    @include flex(center, center);
+    img {
+      width: 43px;
+      padding-left: 20px;
+    }
+  }
+}
+
+/* main body */
+.mainBody {
+  display: flex;
+  justify-content: center;
+  @include margin(100px, 20%, 20%);
+}
+
+/* feed */
+.feed {
+  .feedTopContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: $bg_white;
+  }
+  .feedImgWrap {
+    width: 600px;
+    img {
+      width: 100%;
+    }
+  }
+  .feedSummary {
+    padding: 10px 10px 0 10px;
+    // padding-top: 10px;
+    // padding-left: 10px;
+    background-color: $bg_white;
+  }
+  .feed_comment_input {
+    @include flex(space-between, center);
+    padding: 10px 10px;
+    background-color: $bg_white;
+    border-top: $gray_border;
+
+    input {
+      width: 90%;
+      border: none;
+      font-size: 15px;
+    }
+    input:focus {
+      outline: none;
+    }
+  }
+}
+
+.profileImgAndUserId {
+  display: flex;
+  align-items: center;
+  span {
+    font-weight: 600;
+    color: #3f3e3e;
+  }
+}
+
+.profile_image {
+  @include flex(center, center);
+  width: 40px;
+  height: 40px;
+  margin-right: 7px;
+  img {
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+
+.ring .profile_image {
+  background-size: 40px;
+  background-image: url('../../../assets/sunyeong/story_ring.png');
+}
+
+#icon_more {
+  @include flex(center, center);
+  width: 30px;
+  img {
+    width: 15px;
+  }
+}
+
+.profile_text {
+  font-size: 14px;
+  .user_id {
+    font-weight: 600;
+  }
+  div:last-child {
+    color: gray;
+  }
+}
+.comment_upper {
+  @include flex(space-between, center);
+  .comment_like_icon img {
+    margin-left: 5px;
+    width: 17px;
+    height: 17px;
+  }
+}
+
+.comment_bottom {
+  font-size: 15px;
+  color: $textColorGray;
+}
+
+.summaryIcons {
+  display: flex;
+  justify-content: space-between;
+  img {
+    width: 25px;
+  }
+  .iconLeft img {
+    margin-right: 10px;
+  }
+}
+
+.feed_like {
+  display: flex;
+  align-items: center;
+  img {
+    border-radius: 70%;
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.textWithOtherColor {
+  color: #2851a3;
+}
+
+.main_right {
+  width: 300px;
+  margin-left: 30px;
+  .main_right_top {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 30px;
+  }
+  .main_right_story {
+    @include padding(10px, 10px, 10px);
+    height: 180px;
+    margin-bottom: 15px;
+    background-color: $bg_white;
+    overflow: hidden;
+    .main_right_story_title {
+      display: flex;
+      justify-content: space-between;
+      span:first-child {
+        color: $textColorGray;
+      }
+      span {
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .recommandForUsers {
+    @include padding(10px, 10px, 10px);
+    height: 150px;
+    background-color: $bg_white;
+    overflow: hidden;
+    .main_right_story_title {
+      display: flex;
+      justify-content: space-between;
+      span:first-child {
+        color: $textColorGray;
+      }
+      span {
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.profile {
+  @include flex(flex-start, center);
+  margin-top: 3px;
+  .profile_image_other_size {
+    @include flex(center, center);
+    width: 50px;
+    height: 50px;
+    margin-right: 7px;
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+  }
+}
+
+.profile_recommand {
+  @include flex(space-between, center);
+  .follow_text {
+    font-size: $textButton_fontSize;
+    color: $textButton_color;
+  }
+}
+
+#button_comment {
+  font-size: $textButton_fontSize;
+  color: $textButton_color;
+}
+
+footer {
+  a,
+  address {
+    color: $textColorGray;
+    text-decoration: none;
+  }
+}
+footer .footer_link_list {
+  margin-top: 20px;
+}
