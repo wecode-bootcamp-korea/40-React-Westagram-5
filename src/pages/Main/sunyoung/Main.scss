@@ -85,7 +85,7 @@ body {
       border: $gray_border;
       border-radius: 3px;
       /* search icon */
-      background: url('../../../assets/sunyeong/search.png') no-repeat;
+      background: url('../../../assets/sunyoung/search.png') no-repeat;
       background-size: 15px;
       background-position: 78px center;
       outline: none;
@@ -128,9 +128,12 @@ body {
   }
   .feedSummary {
     padding: 10px 10px 0 10px;
-    // padding-top: 10px;
-    // padding-left: 10px;
     background-color: $bg_white;
+    .feed_description {
+      div {
+        padding-bottom: 5px;
+      }
+    }
   }
   .feed_comment_input {
     @include flex(space-between, center);
@@ -147,6 +150,10 @@ body {
       outline: none;
     }
   }
+}
+
+.user_id {
+  font-weight: 600;
 }
 
 .profileImgAndUserId {
@@ -173,7 +180,7 @@ body {
 
 .ring .profile_image {
   background-size: 40px;
-  background-image: url('../../../assets/sunyeong/story_ring.png');
+  background-image: url('../../../assets/sunyoung/story_ring.png');
 }
 
 #icon_more {

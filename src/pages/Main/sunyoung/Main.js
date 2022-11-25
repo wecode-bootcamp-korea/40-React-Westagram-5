@@ -1,8 +1,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../sunyeong/Main.scss';
+import '../sunyoung/Main.scss';
 
-function MainSunyeong() {
+function MainSunyoung() {
   const navigate = useNavigate();
 
   return (
@@ -12,7 +12,7 @@ function MainSunyeong() {
           <img
             className="instagram_logo_img"
             alt="instagram_logo"
-            src="./images/sunyeong/instagram_icon.png"
+            src="./images/sunyoung/instagram_icon.png"
           />
           <h1 className="instagram_logo_text">westagram</h1>
         </div>
@@ -38,9 +38,9 @@ function MainSunyeong() {
 
       <button
         className="btn_goToOtherPage"
-        onClick={() => navigate('/login-sunyeong')}
+        onClick={() => navigate('/login-sunyoung')}
       >
-        go to login-sunyeong
+        go to login-sunyoung
       </button>
 
       <main className="mainBody">
@@ -49,61 +49,64 @@ function MainSunyeong() {
           <div className="feedTopContainer">
             <div className="profileImgAndUserId">
               <div className="profile_image">
-                <img alt="profile" src="./images/sunyeong/profile_img.png" />
+                <img alt="profile" src="./images/sunyoung/profile_img.png" />
               </div>
               <span>y_xunyoung</span>
             </div>
             <div id="icon_more">
-              <img alt="more" src="./images/sunyeong/more.png" />
+              <img alt="more" src="./images/sunyoung/more.png" />
             </div>
           </div>
           {/* ----------- */}
           <div className="feedImgWrap">
-            <img alt="feed" src="./images/sunyeong/feed.jpg" />
+            <img alt="feed" src="./images/sunyoung/feed.jpg" />
           </div>
 
           {/* feed-summary */}
           <div className="feedSummary">
             <div className="summaryIcons">
               <div className="iconLeft">
-                <img alt="heart" src="./images/sunyeong/heart.png" />
-                <img alt="chat" src="./images/sunyeong/chat.png" />
-                <img alt="send" src="./images/sunyeong/send.png" />
+                <img alt="heart" src="./images/sunyoung/heart.png" />
+                <img alt="chat" src="./images/sunyoung/chat.png" />
+                <img alt="send" src="./images/sunyoung/send.png" />
               </div>
               <div className="iconRight">
-                <img alt="bookmark" src="./images/sunyeong/bookmark.png" />
+                <img alt="bookmark" src="./images/sunyoung/bookmark.png" />
               </div>
             </div>
             <div className="feed_like">
               <div className="profileImage">
                 <img
                   alt="profile_image"
-                  src="./images/sunyeong/profile_img.png"
+                  src="./images/sunyoung/profile_img.png"
                 />
               </div>
               <span className="user_id">y_xunyoung</span>
               <span>님 외 59명이 좋아합니다.</span>
             </div>
             <div className="feed_description">
-              <span className="user_id">y_xunyoung</span>
-              <span>
-                &nbsp; 빵지순례 필수코스 12가지로 구성된 마들렌 전시회를 볼 수
-                있는 도식화는
-              </span>
-              <br />
-              <span> 요즘 상수동에서 항상 웨이팅 가득한 핫한 카페입니다. </span>
-              <br />
-              <span>
+              <div>
+                <span className="user_id">y_xunyoung</span>
+                &nbsp;
+                <span>
+                  빵지순례 필수코스 12가지로 구성된 마들렌 전시회를 볼 수 있는
+                  도식화는 요즘
+                </span>
+              </div>
+
+              <div>상수동에서 항상 웨이팅 가득한 핫한 카페입니다.</div>
+              <div>
                 음료도 상큼한 에이드부터 크림라떼 등 종류도 다양하니 다들 도식화
                 뿌시러가주세요.
-              </span>
-              <br />
+              </div>
               <br />
               <div>
                 &#128205;도식화 상수 - 서울 마포구 와우산로17길 19-9 1층
               </div>
-              <span>✅ 인스타아이디</span>
-              <span className="textWithOtherColor">@dosikhwa_seoul</span>
+              <div>
+                <span>✅ 인스타아이디</span>
+                <span className="textWithOtherColor">@dosikhwa_seoul</span>
+              </div>
               <div>✅ 매일 12:00-22:00 / 21:00 라스트오더</div>
               <div>✅ 상수역 1번출구에서 350미터</div>
               <br />
@@ -128,12 +131,12 @@ function MainSunyeong() {
                     <img
                       id="deleteBtn"
                       alt="delete_button"
-                      src="./images/sunyeong/trash.png"
+                      src="./images/sunyoung/trash.png"
                     />
                     <img
                       id="empty_heart"
                       alt="like_button"
-                      src="./images/sunyeong/empty_heart.png"
+                      src="./images/sunyoung/empty_heart.png"
                     />
                   </div>
                 </div>
@@ -151,7 +154,7 @@ function MainSunyeong() {
           <div className="main_right_top">
             <div className="profile">
               <div className="profile_image_other_size">
-                <img alt="profile" src="./images/sunyeong/profile_img.png" />
+                <img alt="profile" src="./images/sunyoung/profile_img.png" />
               </div>
               <div className="profile_text">
                 <div className="user_id">y_xunyoung</div>
@@ -168,7 +171,7 @@ function MainSunyeong() {
             {/* <!-- profile --> */}
             <div className="profile ring">
               <div className="profile_image">
-                <img alt="profile" src="./images/sunyeong/profile_img.png" />
+                <img alt="profile" src="./images/sunyoung/profile_img.png" />
               </div>
               <div className="profile_text">
                 <div className="user_id">y_xunyoung</div>
@@ -179,7 +182,7 @@ function MainSunyeong() {
             <!-- profile --> */}
             <div className="profile ring">
               <div className="profile_image">
-                <img alt="profile" src="./images/sunyeong/profile_img.png" />
+                <img alt="profile" src="./images/sunyoung/profile_img.png" />
               </div>
               <div className="profile_text">
                 <div className="user_id">y_xunyoung</div>
@@ -190,7 +193,7 @@ function MainSunyeong() {
             <!-- profile --> */}
             <div className="profile ring">
               <div className="profile_image">
-                <img alt="profile" src="./images/sunyeong/profile_img.png" />
+                <img alt="profile" src="./images/sunyoung/profile_img.png" />
               </div>
               <div className="profile_text">
                 <div className="user_id">y_xunyoung</div>
@@ -201,7 +204,7 @@ function MainSunyeong() {
             <!-- profile --> */}
             <div className="profile ring">
               <div className="profile_image">
-                <img alt="profile" src="./images/sunyeong/profile_img.png" />
+                <img alt="profile" src="./images/sunyoung/profile_img.png" />
               </div>
               <div className="profile_text">
                 <div className="user_id">y_xunyoung</div>
@@ -219,7 +222,7 @@ function MainSunyeong() {
             <div className="profile_recommand">
               <div className="profile">
                 <div className="profile_image">
-                  <img alt="profile" src="./images/sunyeong/profile_img.png" />
+                  <img alt="profile" src="./images/sunyoung/profile_img.png" />
                 </div>
                 <div className="profile_text">
                   <div className="user_id">y_xunyoung</div>
@@ -233,7 +236,7 @@ function MainSunyeong() {
             <div className="profile_recommand">
               <div className="profile">
                 <div className="profile_image">
-                  <img alt="profile" src="./images/sunyeong/profile_img.png" />
+                  <img alt="profile" src="./images/sunyoung/profile_img.png" />
                 </div>
                 <div className="profile_text">
                   <div className="user_id">y_xunyoung</div>
@@ -247,7 +250,7 @@ function MainSunyeong() {
             <div className="profile_recommand">
               <div className="profile">
                 <div className="profile_image">
-                  <img alt="profile" src="./images/sunyeong/profile_img.png" />
+                  <img alt="profile" src="./images/sunyoung/profile_img.png" />
                 </div>
                 <div className="profile_text">
                   <div className="user_id">y_xunyoung</div>
@@ -282,4 +285,4 @@ function MainSunyeong() {
   );
 }
 
-export default MainSunyeong;
+export default MainSunyoung;

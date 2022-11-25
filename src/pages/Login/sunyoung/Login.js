@@ -1,8 +1,8 @@
 import React from 'react';
-import '../sunyeong/Login.scss';
+import '../sunyoung/Login.scss';
 import { useNavigate } from 'react-router-dom';
 
-function LoginSunyeong() {
+function LoginSunyoung() {
   const navigate = useNavigate();
   return (
     <div className="wrapping">
@@ -26,7 +26,7 @@ function LoginSunyeong() {
             />
           </div>
           <button
-            onClick={() => navigate('/main-sunyeong')}
+            onClick={() => navigate('/main-sunyoung')}
             id="login_btn"
             className="button_login"
           >
@@ -45,4 +45,4 @@ function LoginSunyeong() {
   );
 }
 
-export default LoginSunyeong;
+export default LoginSunyoung;
