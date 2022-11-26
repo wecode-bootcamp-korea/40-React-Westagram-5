@@ -1,9 +1,21 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import '../sunyoung/Login.scss';
 import { useNavigate } from 'react-router-dom';
 
 function LoginSunyoung() {
   const navigate = useNavigate();
+
+  const [userId, setUserId] = useState('');
+  const [userPwd, setUserPwd] = useState('');
+
+  const saveUserId = e => {
+    setUserId(e.target.value);
+  };
+
+  const saveUserPwd = e => {
+    setUserPwd(e.target.value);
+  };
+
   return (
     <div className="wrapping">
       <div className="loginBox">
@@ -11,6 +23,8 @@ function LoginSunyoung() {
         <form>
           <div className="inputId">
             <input
+              value={userId}
+              onChange={saveUserId}
               className="idButton"
               type="text"
               placeholder="전화번호,사용자 이름 또는 이메일"
@@ -18,6 +32,8 @@ function LoginSunyoung() {
           </div>
           <div className="inputPassword">
             <input
+              value={userPwd}
+              onChange={saveUserPwd}
               id="input_pwd"
               className="password_button"
               type="password"
