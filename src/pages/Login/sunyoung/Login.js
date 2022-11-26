@@ -42,9 +42,16 @@ function LoginSunyoung() {
             />
           </div>
           <button
+            // 조건 2개가 충족되지 않으면 disabled={!false} 때문에 disabled={ture}
+            disabled={!(userId.includes('@') && userPwd.length >= 5)}
             onClick={() => navigate('/main-sunyoung')}
             id="login_btn"
-            className="button_login"
+            // 조건 2개중 하나라도 충족되지 않으면 오직'button_login_default'의 class만 갖는다.
+            className={`${
+              userId.includes('@') && userPwd.length >= 5
+                ? 'button_login_default active'
+                : 'button_login_default'
+            }`}
           >
             로그인
           </button>

@@ -46,7 +46,7 @@ input {
   border-radius: 3px;
 }
 
-.button_login {
+.button_login_default {
   width: 258px;
   height: 36px;
   color: white;
@@ -56,6 +56,11 @@ input {
   margin-top: 6px;
   font-weight: 700;
   opacity: 0.3;
+}
+
+.button_login_default.active {
+  background-color: #1877f2;
+  opacity: 0.8;
 }
 
 .forgetPassword {

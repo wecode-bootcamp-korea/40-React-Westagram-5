@@ -263,7 +263,7 @@ function MainSunyoung() {
           </div>
 
           <footer>
-            <div class="footer_link_list">
+            <div className="footer_link_list">
               <a href="#">westagram 정보 ・</a>
               <a href="#">지원 ・</a>
               <a href="#">홍보 센터 ・</a>
