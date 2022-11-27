@@ -1,9 +1,35 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../sunyoung/Main.scss';
 
 function MainSunyoung() {
   const navigate = useNavigate();
+
+  const [comment, setComment] = useState('');
+  const [commentList, setCommentList] = useState([]);
+
+  // 댓글창에 내용 입력
+  const inputChangeHandler = e => {
+    setComment(e.target.value);
+  };
+
+  //게시 버튼 클릭햇을 때 댓글 추가 기능
+  const buttonClickHandler = () => {
+    setCommentList(prevState => {
+      return [...prevState, comment];
+    });
+    setComment('');
+  };
+
+  // enter 눌렀을 때 댓글 입력 기능 구현
+  const keyDownHandler = e => {
+    if (e.keyCode === 13) {
+      setCommentList(prevState => {
+        return [...prevState, comment];
+      });
+      setComment('');
+    }
+  };
 
   return (
     <>
@@ -143,10 +169,48 @@ function MainSunyoung() {
                 <div className="comment_bottom">42분전</div>
               </div>
             </div>
+            {commentList.map((d, index) => {
+              return (
+                <div key={index} className="comment">
+                  <div className="comment_upper">
+                    <div className="comment_content">
+                      <span id="userNickname" className="user_id">
+                        suuyani
+                      </span>
+                      <span id="feed_comment" className="text">
+                        {d}
+                      </span>
+                    </div>
+                    <div className="comment_like_icon">
+                      <img
+                        id="deleteBtn"
+                        alt="delete_button"
+                        src="./images/sunyoung/trash.png"
+                      />
+                      <img
+                        id="empty_heart"
+                        alt="like_button"
+                        src="./images/sunyoung/empty_heart.png"
+                      />
+                    </div>
+                  </div>
+                  <div className="comment_bottom">42분전</div>
+                </div>
+              );
+            })}
           </div>
           <div className="feed_comment_input">
-            <input id="input_comment" type="text" placeholder="댓글 달기..." />
-            <div id="button_comment">게시</div>
+            <input
+              onKeyDown={keyDownHandler}
+              onChange={inputChangeHandler}
+              value={comment}
+              id="input_comment"
+              type="text"
+              placeholder="댓글 달기..."
+            />
+            <div onClick={buttonClickHandler} id="button_comment">
+              게시
+            </div>
           </div>
         </article>
 
@@ -264,7 +328,7 @@ function MainSunyoung() {
 
           <footer>
             <div className="footer_link_list">
-              <a href="#">westagram 정보 ・</a>
+              {/* <a href="#">westagram 정보 ・</a>
               <a href="#">지원 ・</a>
               <a href="#">홍보 센터 ・</a>
               <a href="#">API ・</a>
@@ -274,7 +338,7 @@ function MainSunyoung() {
               <a href="#">디렉터리</a>
               <a href="#">프로필</a>
               <a href="#">해시태그</a>
-              <a href="#">언어</a>
+              <a href="#">언어</a> */}
             </div>
             <br />
             <address>© 2022 WESTAGRAM FROM META</address>

@@ -156,6 +156,12 @@ body {
   font-weight: 600;
 }
 
+.comment_content {
+  .user_id {
+    margin-right: 5px;
+  }
+}
+
 .profileImgAndUserId {
   display: flex;
   align-items: center;
@@ -312,6 +318,8 @@ body {
 #button_comment {
   font-size: $textButton_fontSize;
   color: $textButton_color;
+  border: none;
+  background-color: white;
 }
 
 footer {
