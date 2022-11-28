@@ -2,11 +2,41 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../sunyoung/Main.scss';
 
+function Comment({ d, index }) {
+  return (
+    <div key={index} className="comment">
+      <div className="comment_upper">
+        <div className="comment_content">
+          <span id="userNickname" className="user_id">
+            suuyani
+          </span>
+          <span id="feed_comment" className="text">
+            {d}
+          </span>
+        </div>
+        <div className="comment_like_icon">
+          <img
+            id="deleteBtn"
+            alt="delete_button"
+            src="./images/sunyoung/trash.png"
+          />
+          <img
+            id="empty_heart"
+            alt="like_button"
+            src="./images/sunyoung/empty_heart.png"
+          />
+        </div>
+      </div>
+      <div className="comment_bottom">42분전</div>
+    </div>
+  );
+}
+
 function MainSunyoung() {
   const navigate = useNavigate();
 
   const [comment, setComment] = useState('');
-  const [commentList, setCommentList] = useState([]);
+  const [commentList, setCommentList] = useState(['여기 진짜 강추!']);
 
   // 댓글창에 내용 입력
   const inputChangeHandler = e => {
@@ -61,7 +91,6 @@ function MainSunyoung() {
           />
         </div>
       </nav>
-
       <button
         className="btn_goToOtherPage"
         onClick={() => navigate('/login-sunyoung')}
@@ -143,61 +172,10 @@ function MainSunyoung() {
               <br />
             </div>
             <div className="feed_comment">
-              <div className="comment">
-                <div className="comment_upper">
-                  <div className="comment_content">
-                    <span id="userNickname" className="user_id">
-                      suuyani
-                    </span>
-                    <span id="feed_comment" className="text">
-                      여기 저도 진짜 강추해요!
-                    </span>
-                  </div>
-                  <div className="comment_like_icon">
-                    <img
-                      id="deleteBtn"
-                      alt="delete_button"
-                      src="./images/sunyoung/trash.png"
-                    />
-                    <img
-                      id="empty_heart"
-                      alt="like_button"
-                      src="./images/sunyoung/empty_heart.png"
-                    />
-                  </div>
-                </div>
-                <div className="comment_bottom">42분전</div>
-              </div>
+              {commentList.map((d, index) => {
+                return <Comment key={index} d={d} index={index} />;
+              })}
             </div>
-            {commentList.map((d, index) => {
-              return (
-                <div key={index} className="comment">
-                  <div className="comment_upper">
-                    <div className="comment_content">
-                      <span id="userNickname" className="user_id">
-                        suuyani
-                      </span>
-                      <span id="feed_comment" className="text">
-                        {d}
-                      </span>
-                    </div>
-                    <div className="comment_like_icon">
-                      <img
-                        id="deleteBtn"
-                        alt="delete_button"
-                        src="./images/sunyoung/trash.png"
-                      />
-                      <img
-                        id="empty_heart"
-                        alt="like_button"
-                        src="./images/sunyoung/empty_heart.png"
-                      />
-                    </div>
-                  </div>
-                  <div className="comment_bottom">42분전</div>
-                </div>
-              );
-            })}
           </div>
           <div className="feed_comment_input">
             <input
