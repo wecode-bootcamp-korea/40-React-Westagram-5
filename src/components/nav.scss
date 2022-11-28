@@ -1,0 +1,80 @@
+@mixin flex($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin padding($top, $right, $left) {
+  padding-top: $top;
+  padding-right: $right;
+  padding-left: $left;
+}
+
+$gray_border: 1px solid #e9e7e7;
+
+$bg_white: white;
+
+.navContainer,
+.feed,
+.main_right_story,
+.recommandForUsers {
+  border: $gray_border;
+}
+
+/* navigation bar */
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  @include padding(0, 20%, 20%);
+  background-color: $bg_white;
+  border: $gray_border;
+
+  .navLeft {
+    @include flex(center, center);
+    .instagram_logo_text {
+      padding-left: 15px;
+      font-family: 'Lobster', cursive;
+      font-size: 20px;
+    }
+    .instagram_logo_img {
+      width: 43px;
+      padding-right: 15px;
+      border-right: 2px solid black;
+    }
+  }
+
+  .navCenter {
+    @include flex(center, center);
+    .inputSearch {
+      margin: 10px 50px;
+      background-color: $bg_white;
+      text-align: center;
+      width: 215px;
+      height: 25px;
+      padding: 3px 10px 3px 26px;
+      color: #8e8e8e;
+      background-color: $bg_white;
+      font-weight: 300;
+      border: $gray_border;
+      border-radius: 3px;
+      /* search icon */
+      background: url('../assets/sunyoung/search.png') no-repeat;
+      background-size: 15px;
+      background-position: 78px center;
+      outline: none;
+    }
+    img {
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+  .navRight {
+    @include flex(center, center);
+    img {
+      width: 43px;
+      padding-left: 20px;
+    }
+  }
+}
