@@ -11,7 +11,7 @@ import LoginSunyeong from './pages/Login/sunyeong/Login';
 
 import ComponentNav from './components/Nav';
 
-import MainSuin from './pages/Main/suin/Main';
+// import MainSuin from './pages/Main/suin/Main';
 import MainHyunwuk from './pages/Main/hyunwuk/Main';
 import MainSunyeong from './pages/Main/sunyeong/Main';
 
@@ -24,7 +24,7 @@ function Router() {
         <Route path="/login-suin" element={<LoginSuin />} />
         <Route path="/login-hyunwuk" element={<LoginHyunwuk />} />
         <Route path="/login-sunyeong" element={<LoginSunyeong />} />
-        <Route path="/main-suin" element={<MainSuin />} />
+        {/* <Route path="/main-suin" element={<MainSuin />} /> */}
         <Route path="/main-hyunwuk" element={<MainHyunwuk />} />
         <Route path="/main-sunyeong" element={<MainSunyeong />} />
       </Routes>
