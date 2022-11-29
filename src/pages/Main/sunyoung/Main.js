@@ -1,16 +1,15 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-// import Nav from '../../../components/nav';
+import '../../../components/Nav';
+import Comment from './Comment';
 import '../sunyoung/Main.scss';
 import FOOTER_INFO_LIST from './FooterData';
-
-// import { info } from 'sass';
 
 function MainSunyoung() {
   const navigate = useNavigate();
 
   const [comment, setComment] = useState('');
-  const [commentList, setCommentList] = useState([]);
+  const [commentList, setCommentList] = useState(['여기 진짜 강추!']);
 
   // 댓글창에 내용 입력
   const inputChangeHandler = e => {
@@ -146,62 +145,11 @@ function MainSunyoung() {
               <br />
               <br />
             </div>
-            <div className="feedComment">
-              <div className="comment">
-                <div className="commentUpper">
-                  <div className="commentContent">
-                    <span id="userNickname" className="userId">
-                      suuyani
-                    </span>
-                    <span id="feedComment" className="text">
-                      여기 저도 진짜 강추해요!
-                    </span>
-                  </div>
-                  <div className="comment_like_icon">
-                    <img
-                      id="deleteBtn"
-                      alt="delete_button"
-                      src="./images/sunyoung/trash.png"
-                    />
-                    <img
-                      id="empty_heart"
-                      alt="like_button"
-                      src="./images/sunyoung/empty_heart.png"
-                    />
-                  </div>
-                </div>
-                <div className="commentBottom">42분전</div>
-              </div>
-            </div>
-            {commentList.map((d, index) => {
-              return (
-                <div key={index} className="comment">
-                  <div className="commentUpper">
-                    <div className="commentContent">
-                      <span id="userNickname" className="userId">
-                        suuyani
-                      </span>
-                      <span id="feedComment" className="text">
-                        {d}
-                      </span>
-                    </div>
-                    <div className="comment_like_icon">
-                      <img
-                        id="deleteBtn"
-                        alt="delete_button"
-                        src="./images/sunyoung/trash.png"
-                      />
-                      <img
-                        id="empty_heart"
-                        alt="like_button"
-                        src="./images/sunyoung/empty_heart.png"
-                      />
-                    </div>
-                  </div>
-                  <div className="commentBottom">42분전</div>
-                </div>
-              );
-            })}
+
+            {/* comment 컴포넌트 */}
+            {commentList.map((d, index) => (
+              <Comment index={index} d={d} key={index} />
+            ))}
           </div>
           <div className="feedCommentInput">
             <input

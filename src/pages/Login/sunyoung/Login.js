@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Nav from '../../../components/nav';
+import Nav from '../../../components/Nav';
 import '../sunyoung/Login.scss';
 
 function LoginSunyoung() {
@@ -30,7 +30,7 @@ function LoginSunyoung() {
               className="idButton"
               type="text"
               placeholder="전화번호,사용자 이름 또는 이메일"
-            ></input>
+            />
           </div>
           <div className="inputPassword">
             <input

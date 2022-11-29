@@ -9,7 +9,7 @@ import LoginSuin from './pages/Login/suin/Login';
 import LoginHyunwuk from './pages/Login/hyunwuk/Login';
 import LoginSunyoung from './pages/Login/sunyoung/Login';
 
-import ComponentNav from './components/nav';
+import ComponentNav from './components/Nav';
 
 import MainSuin from './pages/Main/suin/Main';
 import MainHyunwuk from './pages/Main/hyunwuk/Main';
