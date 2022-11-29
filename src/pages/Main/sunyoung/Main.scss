@@ -1,39 +1,11 @@
-@mixin flex($justify, $align) {
-  display: flex;
-  justify-content: $justify;
-  align-items: $align;
-}
-
-@mixin flex($justify, $align) {
-  display: flex;
-  justify-content: $justify;
-  align-items: $align;
-}
-
-@mixin padding($top, $right, $left) {
-  padding-top: $top;
-  padding-right: $right;
-  padding-left: $left;
-}
-
-@mixin margin($top, $right, $left) {
-  margin-top: $top;
-  margin-right: $right;
-  margin-left: $left;
-}
-
+@import '../../../styles/Variables.scss';
+@import '../../../styles/common.scss';
+@import '../../../styles/reset.scss';
 @media screen and (max-width: 800px) {
-  .main_right {
+  .mainRight {
     display: none;
   }
 }
-
-$textColorGray: gray;
-$gray_border: 1px solid #e9e7e7;
-$bg_white: white;
-
-$textButton_fontSize: 14px;
-$textButton_color: #0090f6;
 
 body {
   margin: 0;
@@ -42,7 +14,7 @@ body {
 
 .navContainer,
 .feed,
-.main_right_story,
+.mainRightStory,
 .recommandForUsers {
   border: $gray_border;
 }
@@ -129,13 +101,13 @@ body {
   .feedSummary {
     padding: 10px 10px 0 10px;
     background-color: $bg_white;
-    .feed_description {
+    .feedDescription {
       div {
         padding-bottom: 5px;
       }
     }
   }
-  .feed_comment_input {
+  .feedCommentInput {
     @include flex(space-between, center);
     padding: 10px 10px;
     background-color: $bg_white;
@@ -152,12 +124,12 @@ body {
   }
 }
 
-.user_id {
+.userId {
   font-weight: 600;
 }
 
-.comment_content {
-  .user_id {
+.commentContent {
+  .userId {
     margin-right: 5px;
   }
 }
@@ -171,7 +143,7 @@ body {
   }
 }
 
-.profile_image {
+.profileImage {
   @include flex(center, center);
   width: 40px;
   height: 40px;
@@ -184,7 +156,7 @@ body {
   }
 }
 
-.ring .profile_image {
+.ring .profileImage {
   background-size: 40px;
   background-image: url('../../../assets/sunyoung/story_ring.png');
 }
@@ -197,16 +169,16 @@ body {
   }
 }
 
-.profile_text {
+.profileText {
   font-size: 14px;
-  .user_id {
+  .userId {
     font-weight: 600;
   }
   div:last-child {
     color: gray;
   }
 }
-.comment_upper {
+.commentUpper {
   @include flex(space-between, center);
   .comment_like_icon img {
     margin-left: 5px;
@@ -215,7 +187,7 @@ body {
   }
 }
 
-.comment_bottom {
+.commentBottom {
   font-size: 15px;
   color: $textColorGray;
 }
@@ -231,7 +203,7 @@ body {
   }
 }
 
-.feed_like {
+.feedLike {
   display: flex;
   align-items: center;
   img {
@@ -245,21 +217,21 @@ body {
   color: #2851a3;
 }
 
-.main_right {
+.mainRight {
   width: 300px;
   margin-left: 30px;
-  .main_right_top {
+  .mainRightTop {
     padding-left: 10px;
     padding-right: 10px;
     margin-bottom: 30px;
   }
-  .main_right_story {
+  .mainRightStory {
     @include padding(10px, 10px, 10px);
     height: 180px;
     margin-bottom: 15px;
     background-color: $bg_white;
     overflow: hidden;
-    .main_right_story_title {
+    .mainRightStoryTitle {
       display: flex;
       justify-content: space-between;
       span:first-child {
@@ -277,7 +249,7 @@ body {
     height: 150px;
     background-color: $bg_white;
     overflow: hidden;
-    .main_right_story_title {
+    .mainRightStoryTitle {
       display: flex;
       justify-content: space-between;
       span:first-child {
@@ -294,7 +266,7 @@ body {
 .profile {
   @include flex(flex-start, center);
   margin-top: 3px;
-  .profile_image_other_size {
+  .profileImageSmallSize {
     @include flex(center, center);
     width: 50px;
     height: 50px;
@@ -307,9 +279,9 @@ body {
   }
 }
 
-.profile_recommand {
+.profileRecommand {
   @include flex(space-between, center);
-  .follow_text {
+  .followText {
     font-size: $textButton_fontSize;
     color: $textButton_color;
   }
@@ -329,6 +301,9 @@ footer {
     text-decoration: none;
   }
 }
-footer .footer_link_list {
+footer .footerLinkList {
   margin-top: 20px;
+  li {
+    display: inline;
+  }
 }

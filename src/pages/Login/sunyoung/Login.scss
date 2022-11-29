@@ -1,12 +1,10 @@
-$gray_border: 1px solid #e9e7e7;
+@import '../../../styles/Variables.scss';
+@import '../../../styles/common.scss';
+@import '../../../styles/reset.scss';
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
-* {
-  box-sizing: border-box;
-}
-
 .wrapping {
-  //   @include flex(center, center);
+  @include flex(center, center);
   display: flex;
   justify-content: center;
   align-items: center;

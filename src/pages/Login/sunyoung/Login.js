@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import '../sunyoung/Login.scss';
 import { useNavigate } from 'react-router-dom';
+import Nav from '../../../components/nav';
+import '../sunyoung/Login.scss';
 
 function LoginSunyoung() {
   const navigate = useNavigate();
@@ -18,6 +19,7 @@ function LoginSunyoung() {
 
   return (
     <div className="wrapping">
+      <Nav />
       <div className="loginBox">
         <h1 className="logo">westagram</h1>
         <form>
@@ -42,7 +44,7 @@ function LoginSunyoung() {
             />
           </div>
           <button
-            // 조건 2개가 충족되지 않으면 disabled={!false} 때문에 disabled={ture}
+            // 조건 2개가 충족되지 않으면 disabled={!false} 때문에 disabled={true}
             disabled={!(userId.includes('@') && userPwd.length >= 5)}
             onClick={() => navigate('/main-sunyoung')}
             id="login_btn"

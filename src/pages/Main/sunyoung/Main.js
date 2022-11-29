@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+// import Nav from '../../../components/nav';
 import '../sunyoung/Main.scss';
+import FOOTER_INFO_LIST from './FooterData';
+
+// import { info } from 'sass';
 
 function MainSunyoung() {
   const navigate = useNavigate();
@@ -63,10 +67,10 @@ function MainSunyoung() {
       </nav>
 
       <button
-        className="btn_goToOtherPage"
+        className="goToLoginButton"
         onClick={() => navigate('/login-sunyoung')}
       >
-        go to login-sunyoung
+        Go to Login
       </button>
 
       <main className="mainBody">
@@ -74,7 +78,7 @@ function MainSunyoung() {
           {/* feed-top */}
           <div className="feedTopContainer">
             <div className="profileImgAndUserId">
-              <div className="profile_image">
+              <div className="profileImage">
                 <img alt="profile" src="./images/sunyoung/profile_img.png" />
               </div>
               <span>y_xunyoung</span>
@@ -100,19 +104,19 @@ function MainSunyoung() {
                 <img alt="bookmark" src="./images/sunyoung/bookmark.png" />
               </div>
             </div>
-            <div className="feed_like">
+            <div className="feedLike">
               <div className="profileImage">
                 <img
                   alt="profile_image"
                   src="./images/sunyoung/profile_img.png"
                 />
               </div>
-              <span className="user_id">y_xunyoung</span>
+              <span className="userId">y_xunyoung</span>
               <span>님 외 59명이 좋아합니다.</span>
             </div>
-            <div className="feed_description">
+            <div className="feedDescription">
               <div>
-                <span className="user_id">y_xunyoung</span>
+                <span className="userId">y_xunyoung</span>
                 &nbsp;
                 <span>
                   빵지순례 필수코스 12가지로 구성된 마들렌 전시회를 볼 수 있는
@@ -142,14 +146,14 @@ function MainSunyoung() {
               <br />
               <br />
             </div>
-            <div className="feed_comment">
+            <div className="feedComment">
               <div className="comment">
-                <div className="comment_upper">
-                  <div className="comment_content">
-                    <span id="userNickname" className="user_id">
+                <div className="commentUpper">
+                  <div className="commentContent">
+                    <span id="userNickname" className="userId">
                       suuyani
                     </span>
-                    <span id="feed_comment" className="text">
+                    <span id="feedComment" className="text">
                       여기 저도 진짜 강추해요!
                     </span>
                   </div>
@@ -166,18 +170,18 @@ function MainSunyoung() {
                     />
                   </div>
                 </div>
-                <div className="comment_bottom">42분전</div>
+                <div className="commentBottom">42분전</div>
               </div>
             </div>
             {commentList.map((d, index) => {
               return (
                 <div key={index} className="comment">
-                  <div className="comment_upper">
-                    <div className="comment_content">
-                      <span id="userNickname" className="user_id">
+                  <div className="commentUpper">
+                    <div className="commentContent">
+                      <span id="userNickname" className="userId">
                         suuyani
                       </span>
-                      <span id="feed_comment" className="text">
+                      <span id="feedComment" className="text">
                         {d}
                       </span>
                     </div>
@@ -194,12 +198,12 @@ function MainSunyoung() {
                       />
                     </div>
                   </div>
-                  <div className="comment_bottom">42분전</div>
+                  <div className="commentBottom">42분전</div>
                 </div>
               );
             })}
           </div>
-          <div className="feed_comment_input">
+          <div className="feedCommentInput">
             <input
               onKeyDown={keyDownHandler}
               onChange={inputChangeHandler}
@@ -214,131 +218,129 @@ function MainSunyoung() {
           </div>
         </article>
 
-        <aside className="main_right">
-          <div className="main_right_top">
+        <aside className="mainRight">
+          <div className="mainRightTop">
             <div className="profile">
-              <div className="profile_image_other_size">
+              <div className="profileImageSmallSize">
                 <img alt="profile" src="./images/sunyoung/profile_img.png" />
               </div>
-              <div className="profile_text">
-                <div className="user_id">y_xunyoung</div>
+              <div className="profileText">
+                <div className="userId">y_xunyoung</div>
                 <div className="info">sunyoung</div>
               </div>
             </div>
           </div>
 
-          <div className="main_right_story">
-            <div className="main_right_story_title">
+          <div className="mainRightStory">
+            <div className="mainRightStoryTitle">
               <span>스토리</span>
               <span>모두보기</span>
             </div>
             {/* <!-- profile --> */}
             <div className="profile ring">
-              <div className="profile_image">
+              <div className="profileImage">
                 <img alt="profile" src="./images/sunyoung/profile_img.png" />
               </div>
-              <div className="profile_text">
-                <div className="user_id">y_xunyoung</div>
+              <div className="profileText">
+                <div className="userId">y_xunyoung</div>
                 <div className="info">16분전</div>
               </div>
             </div>
             {/* <!------------->
             <!-- profile --> */}
             <div className="profile ring">
-              <div className="profile_image">
+              <div className="profileImage">
                 <img alt="profile" src="./images/sunyoung/profile_img.png" />
               </div>
-              <div className="profile_text">
-                <div className="user_id">y_xunyoung</div>
+              <div className="profileText">
+                <div className="userId">y_xunyoung</div>
                 <div className="info">16분전</div>
               </div>
             </div>
             {/* <!------------->
             <!-- profile --> */}
             <div className="profile ring">
-              <div className="profile_image">
+              <div className="profileImage">
                 <img alt="profile" src="./images/sunyoung/profile_img.png" />
               </div>
-              <div className="profile_text">
-                <div className="user_id">y_xunyoung</div>
+              <div className="profileText">
+                <div className="userId">y_xunyoung</div>
                 <div className="info">16분전</div>
               </div>
             </div>
             {/* <!------------->
             <!-- profile --> */}
             <div className="profile ring">
-              <div className="profile_image">
+              <div className="profileImage">
                 <img alt="profile" src="./images/sunyoung/profile_img.png" />
               </div>
-              <div className="profile_text">
-                <div className="user_id">y_xunyoung</div>
+              <div className="profileText">
+                <div className="userId">y_xunyoung</div>
                 <div>16분전</div>
               </div>
             </div>
             {/* <!-------------> */}
           </div>
           <div className="recommandForUsers">
-            <div className="main_right_story_title">
+            <div className="mainRightStoryTitle">
               <span>회원님을 위한 추천</span>
               <span>모두보기</span>
             </div>
             {/* <!-- profile --> */}
-            <div className="profile_recommand">
+            <div className="profileRecommand">
               <div className="profile">
-                <div className="profile_image">
+                <div className="profileImage">
                   <img alt="profile" src="./images/sunyoung/profile_img.png" />
                 </div>
-                <div className="profile_text">
-                  <div className="user_id">y_xunyoung</div>
+                <div className="profileText">
+                  <div className="userId">y_xunyoung</div>
                   <div className="info">jxdami님 외2명...</div>
                 </div>
               </div>
-              <div className="follow_text">팔로우</div>
+              <div className="followText">팔로우</div>
             </div>
             {/* <!-------------> */}
             {/* <!-- profile --> */}
-            <div className="profile_recommand">
+            <div className="profileRecommand">
               <div className="profile">
-                <div className="profile_image">
+                <div className="profileImage">
                   <img alt="profile" src="./images/sunyoung/profile_img.png" />
                 </div>
-                <div className="profile_text">
-                  <div className="user_id">y_xunyoung</div>
+                <div className="profileText">
+                  <div className="userId">y_xunyoung</div>
                   <div className="info">jxdami님 외2명...</div>
                 </div>
               </div>
-              <div className="follow_text">팔로우</div>
+              <div className="followText">팔로우</div>
             </div>
             {/* <!-------------> */}
             {/* <!-- profile --> */}
-            <div className="profile_recommand">
+            <div className="profileRecommand">
               <div className="profile">
-                <div className="profile_image">
+                <div className="profileImage">
                   <img alt="profile" src="./images/sunyoung/profile_img.png" />
                 </div>
-                <div className="profile_text">
-                  <div className="user_id">y_xunyoung</div>
+                <div className="profileText">
+                  <div className="userId">y_xunyoung</div>
                   <div className="info">jxdami님 외2명...</div>
                 </div>
               </div>
-              <div className="follow_text">팔로우</div>
+              <div className="followText">팔로우</div>
             </div>
             {/* <!-------------> */}
           </div>
 
           <footer>
-            <div className="footer_link_list">
-              {/* <a href="#">westagram 정보 ・</a>
-              <a href="#">지원 ・</a>
-              <a href="#">홍보 센터 ・</a>
-              <a href="#">API ・</a>
-              <a href="#">채용 정보 ・</a>
-              <a href="#">개인정보처리방침 ・</a>
-              <a href="#">약관</a>
-              <a href="#">디렉터리</a>
-              <a href="#">프로필</a>
-              <a href="#">해시태그</a>
-              <a href="#">언어</a> */}
+            <div className="footerLinkList">
+              <ul>
+                {FOOTER_INFO_LIST.map(info => {
+                  return (
+                    <li key={info.id}>
+                      <a href={info.link}>{info.text}</a>
+                    </li>
+                  );
+                })}
+              </ul>
             </div>
             <br />
             <address>© 2022 WESTAGRAM FROM META</address>
