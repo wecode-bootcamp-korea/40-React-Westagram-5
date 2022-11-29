@@ -12,7 +12,7 @@ const Comment = ({ index, d }) => {
             {d}
           </span>
         </div>
-        <div className="comment_like_icon">
+        <div className="button__likeAndDelete">
           <img
             id="deleteBtn"
             alt="delete_button"
@@ -25,7 +25,7 @@ const Comment = ({ index, d }) => {
           />
         </div>
       </div>
-      <div className="commentBottom">42분전</div>
+      <div className="commentBottom">1분전</div>
     </div>
   );
 };

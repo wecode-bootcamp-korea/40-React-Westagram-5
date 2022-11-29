@@ -98,12 +98,12 @@ body {
       width: 100%;
     }
   }
-  .feedSummary {
+  .feedBottomContainer {
     padding: 10px 10px 0 10px;
     background-color: $bg_white;
-    .feedDescription {
+    .feed__description {
       div {
-        padding-bottom: 5px;
+        padding-bottom: 7px;
       }
     }
   }
@@ -181,7 +181,7 @@ body {
 }
 .commentUpper {
   @include flex(space-between, center);
-  .comment_like_icon img {
+  .button__likeAndDelete img {
     margin-left: 5px;
     width: 17px;
     height: 17px;
@@ -193,18 +193,18 @@ body {
   color: $textColorGray;
 }
 
-.summaryIcons {
+.feed__summaryIcons {
   display: flex;
   justify-content: space-between;
   img {
     width: 25px;
   }
-  .iconLeft img {
+  .feed__iconLeft img {
     margin-right: 10px;
   }
 }
 
-.feedLike {
+.feed__whoLikesFeed {
   display: flex;
   align-items: center;
   img {

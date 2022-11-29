@@ -27,7 +27,7 @@ const FOOTER_INFO_LIST = [
   {
     id: 6,
     link: '',
-    text: ' 개인 정보 처리방침 ・',
+    text: ' 개인정보처리방침 ・',
   },
   {
     id: 7,

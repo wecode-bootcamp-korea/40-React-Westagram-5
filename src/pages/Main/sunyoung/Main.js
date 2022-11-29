@@ -69,7 +69,7 @@ function MainSunyoung() {
         className="goToLoginButton"
         onClick={() => navigate('/login-sunyoung')}
       >
-        Go to Login
+        Login
       </button>
 
       <main className="mainBody">
@@ -92,18 +92,18 @@ function MainSunyoung() {
           </div>
 
           {/* feed-summary */}
-          <div className="feedSummary">
-            <div className="summaryIcons">
-              <div className="iconLeft">
+          <div className="feedBottomContainer">
+            <div className="feed__summaryIcons">
+              <div className="feed__iconLeft">
                 <img alt="heart" src="./images/sunyoung/heart.png" />
                 <img alt="chat" src="./images/sunyoung/chat.png" />
                 <img alt="send" src="./images/sunyoung/send.png" />
               </div>
-              <div className="iconRight">
+              <div className="feed__iconRight">
                 <img alt="bookmark" src="./images/sunyoung/bookmark.png" />
               </div>
             </div>
-            <div className="feedLike">
+            <div className="feed__whoLikesFeed">
               <div className="profileImage">
                 <img
                   alt="profile_image"
@@ -113,7 +113,7 @@ function MainSunyoung() {
               <span className="userId">y_xunyoung</span>
               <span>님 외 59명이 좋아합니다.</span>
             </div>
-            <div className="feedDescription">
+            <div className="feed__description">
               <div>
                 <span className="userId">y_xunyoung</span>
                 &nbsp;
@@ -289,9 +289,9 @@ function MainSunyoung() {
                   );
                 })}
               </ul>
+              <br />
+              <address>© 2022 WESTAGRAM FROM META</address>
             </div>
-            <br />
-            <address>© 2022 WESTAGRAM FROM META</address>
           </footer>
         </aside>
       </main>
