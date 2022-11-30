@@ -80,12 +80,24 @@ body {
 /* main body */
 .mainBody {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  @include margin(100px, 20%, 20%);
+  @include margin(0, 10%, 20%);
+}
+
+.footerLinkList {
+  margin-top: 100px;
+}
+.wrappMainWithFooter {
+  display: flex;
+  margin-top: 100px;
 }
 
 /* feed */
 .feed {
+  margin-bottom: 50px;
+  width: 602px;
+
   .feedTopContainer {
     display: flex;
     justify-content: space-between;
@@ -94,16 +106,25 @@ body {
   }
   .feedImgWrap {
     width: 600px;
+    height: 600px;
+
     img {
       width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
   .feedBottomContainer {
     padding: 10px 10px 0 10px;
     background-color: $bg_white;
     .feed__description {
-      div {
-        padding-bottom: 7px;
+      .feed_text {
+        width: 580px;
+        .sub_feed_text {
+          p {
+            margin-top: 5px;
+          }
+        }
       }
     }
   }

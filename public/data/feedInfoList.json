@@ -1,10 +1,10 @@
 [
   {
     "id": 1,
-    "userId": "wecode1",
+    "userid": "wecode1",
     "username": "kimcode1",
-    "profileImage": "./images/sunyoung/profile_img1.png",
-    "feedImage": "./images/sunyoung/feed_img1.png",
+    "profileImage": "./images/sunyoung/profile_img.png",
+    "feedImage": "./images/sunyoung/feed_img1.jpg",
     "whoLikesFeed": {
       "name": "daily_joyjoy",
       "theCountOfLike": "님 외 10명이 좋아합니다."
@@ -18,8 +18,8 @@
     "id": 2,
     "userid": "wecode2",
     "username": "kimcode2",
-    "profileImage": "./images/sunyoung/profile_img2.png",
-    "feedImage": "./images/sunyoung/feed_img2.png",
+    "profileImage": "./images/sunyoung/profile_img1.png",
+    "feedImage": "./images/sunyoung/feed_img2.jpg",
     "whoLikesFeed": {
       "name": "a_rran",
       "theCountOfLike": "님 외 100명이 좋아합니다."
@@ -33,7 +33,7 @@
     "id": 3,
     "userid": "wecode3",
     "username": "kimcode3",
-    "profileImage": "./images/sunyoung/profile_img3.png",
+    "profileImage": "./images/sunyoung/profile_img2.png",
     "feedImage": "./images/sunyoung/feed_img3.png",
     "whoLikesFeed": {
       "name": "noranbada",
@@ -49,8 +49,8 @@
     "id": 4,
     "userid": "wecode4",
     "username": "kimcode4",
-    "profileImage": "./images/sunyoung/profile_img1.png",
-    "feedImage": "./images/sunyoung/feed_img4.png",
+    "profileImage": "./images/sunyoung/profile_img3.jpg",
+    "feedImage": "./images/sunyoung/feed_img4.jpg",
     "whoLikesFeed": {
       "name": "nkyungwon",
       "theCountOfLike": "님 외 102명이 좋아합니다."
@@ -64,8 +64,8 @@
     "id": 5,
     "userid": "wecode5",
     "username": "kimcode5",
-    "profileImage": "./images/sunyoung/profile_img2.png",
-    "feedImage": "./images/sunyoung/feed_img5.png",
+    "profileImage": "./images/sunyoung/profile_img1.png",
+    "feedImage": "./images/sunyoung/feed_img8.jpg",
     "whoLikesFeed": {
       "name": "moongeesu",
       "theCountOfLike": "님 외 103명 좋아합니다."

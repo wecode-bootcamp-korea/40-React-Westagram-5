@@ -16,7 +16,6 @@ const Feed = () => {
 
   return (
     <div>
-      Feed
       {feedInfoList.map(feedInfo => {
         return (
           <article className="feed">
@@ -59,22 +58,25 @@ const Feed = () => {
                 <span className="userId">{feedInfo.whoLikesFeed.name}</span>
                 <span>{feedInfo.whoLikesFeed.theCountOfLike}</span>
               </div>
+
               <div className="feed__description">
-                <div>
+                &nbsp;
+                <div className="feed_text">
                   <span className="userId">
                     {feedInfo.feedDescription.name}
                   </span>
-                  &nbsp;
-                  <div className="feedDescription">
-                    {feedInfo.feedDescription.content}
-                  </div>
+                  <span className="feed_content">
+                    &nbsp; {feedInfo.feedDescription.content}
+                    <br /> <br />
+                    <br /> <br />
+                  </span>
                 </div>
-
-                {/* comment 컴포넌트 */}
-                {commentList.map((d, index) => (
-                  <Comment index={index} d={d} key={index} />
-                ))}
               </div>
+
+              {/* comment 컴포넌트 */}
+              {commentList.map((d, index) => (
+                <Comment index={index} d={d} key={index} />
+              ))}
             </div>
 
             <div className="feedCommentInput">
