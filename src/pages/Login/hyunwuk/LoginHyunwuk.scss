@@ -54,7 +54,7 @@
   left: 90px;
 }
 .button {
-  background-color: #bfdffd;
+  background-color: blue;
   width: 200px;
   padding: 6px;
   border-radius: 4px;
@@ -65,6 +65,12 @@
   margin-top: 8px;
   position: relative;
   left: 90px;
+
+  &:disabled {
+    //선택자의 부모를 가져온다. --> .button:disabled
+    cursor: pointer;
+    background-color: #bfdffd;
+  }
 }
 .bottom {
   text-align: center;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './LoginHyunwuk.scss';
 // import {Link} from 'react-router-dom';
 
@@ -8,7 +8,21 @@ import './LoginHyunwuk.scss';
 // button에 위에 값 적용하기
 
 function LoginHyunwuk() {
-let 
+  const [userid, setid] = useState('');
+  const [userpw, setpw] = useState('');
+  console.log('id', userid); //console에 나오는지
+  console.log('pw', userpw);
+
+  const saveUserId = e => {
+    setid(e.target.value);
+  };
+
+  const saveUserPwd = e => {
+    setpw(e.target.value);
+    console.log(e.target.value);
+  };
+
+  const active = userid.includes('@') && userpw.length > 5;
 
   return (
     <div>
@@ -16,17 +30,25 @@ let
         <div className="box">
           <header className="logo">Westagram</header>
           <section>
-            <input onChange={this.handleChange} value={text}/>
-            
-            ></input>
+            <input
+              type="text"
+              className="id"
+              placeholder="아이디 입력"
+              onChange={saveUserId} // 함수로 분리하기
+            />
+
             <input
               type="text"
               className="password"
               placeholder="비밀번호 입력"
-            ></input>
+              onChange={saveUserPwd}
+            />
           </section>
           <nav>
-            <button className="button" disabled="disabled">
+            <button
+              className="button"
+              disabled={!active} // disabled 일 때 css 스타일 변경하기
+            >
               로그인
             </button>
           </nav>
