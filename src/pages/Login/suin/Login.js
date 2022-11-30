@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
+import { Link, Navigate, useNavigate } from 'react-router-dom';
 import './Login.scss';
-// import { useNavigate } from 'react-router-dom';
 
 function LoginSuin() {
-  // const [activate, setActivate] = useState(false);
-
+  //🌟id, pw 데이터 값저장위해서 상태값 설정
   const [id, setId] = useState('');
   const [pw, setPw] = useState('');
 
+  //🌟버튼 비활성화 함수 설정
   const disabled = !(id.includes('@') && pw.length >= 5);
 
   //이벤트 참조 값으로 바꾸어주는 함수
@@ -24,8 +24,16 @@ function LoginSuin() {
 
   //조건 : D - @ 포함 / Password  - 5글자 이상
   //조건이 맞으면 버튼활성화, 틀리면 비활성화  (초기값은 비활성화로 유지)
-  const activateButton = () => {
-    return id.indexOf('@') && pw.length >= 5 ? 'active' : null;
+  // const activateButton = () => {
+  //   return id.indexOf('@') && pw.length >= 5 ? 'active' : null;
+  // };
+
+  //🌟버튼 누르면 메인으로!
+  //1. usenavigate를 값으로 갖는 변수를 저장 -구분 편하게 이름 비슷하게 정함
+  const navigate = useNavigate();
+  //2. 메인으로 가는 함수 저장 -> 버튼 태그 onchange에 사용
+  const goToMain = () => {
+    navigate('/main-suin');
   };
 
   return (
@@ -57,8 +65,11 @@ function LoginSuin() {
             />
           </div>
           <div>
-            <button className="login_button" disabled={disabled}>
-              {/* 새로 만든 css 클래스명 가져올라면? */}
+            <button
+              className="login_button"
+              disabled={disabled}
+              onClick={goToMain}
+            >
               로그인
             </button>
           </div>

@@ -1,5 +1,6 @@
-// import React from 'react';
-// import './Main.scss';
+import React, { useState } from 'react';
+import { Link, Navigate, useNavigate } from 'react-router-dom';
+import './Main.scss';
 
 function MainSuin() {
   return (
@@ -266,4 +267,4 @@ function MainSuin() {
   );
 }
 
-// export default MainSuin;
+export default MainSuin;
