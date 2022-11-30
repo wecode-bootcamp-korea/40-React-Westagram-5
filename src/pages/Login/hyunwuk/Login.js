@@ -34,7 +34,7 @@ function LoginHyunwuk() {
               type="text"
               className="id"
               placeholder="아이디 입력"
-              onChange={saveUserId} // 함수로 분리하기
+              onChange={saveUserId}
             />
 
             <input
