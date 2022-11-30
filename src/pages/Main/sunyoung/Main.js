@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../../../components/Nav';
 import Comment from './Comment';
+// import Aside from './Aside';
+import { FOOTER_INFO_LIST } from './FooterData';
 import '../sunyoung/Main.scss';
-import FOOTER_INFO_LIST from './FooterData';
 
 function MainSunyoung() {
   const navigate = useNavigate();
@@ -165,6 +166,7 @@ function MainSunyoung() {
             </div>
           </div>
         </article>
+        {/* aside 컴포넌트 */}
 
         <aside className="mainRight">
           <div className="mainRightTop">

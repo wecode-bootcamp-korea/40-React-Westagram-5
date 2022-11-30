@@ -1,0 +1,78 @@
+[
+  {
+    "id": 1,
+    "userId": "wecode1",
+    "username": "kimcode1",
+    "profileImage": "./images/sunyoung/profile_img1.png",
+    "feedImage": "./images/sunyoung/feed_img1.png",
+    "whoLikesFeed": {
+      "name": "daily_joyjoy",
+      "theCountOfLike": "님 외 10명이 좋아합니다."
+    },
+    "feedDescription": {
+      "name": "wework1",
+      "content": "제 사진을 소개합니다!!!!!!!"
+    }
+  },
+  {
+    "id": 2,
+    "userid": "wecode2",
+    "username": "kimcode2",
+    "profileImage": "./images/sunyoung/profile_img2.png",
+    "feedImage": "./images/sunyoung/feed_img2.png",
+    "whoLikesFeed": {
+      "name": "a_rran",
+      "theCountOfLike": "님 외 100명이 좋아합니다."
+    },
+    "feedDescription": {
+      "name": "wework2",
+      "content": "제 사진을 소개합니다!!"
+    }
+  },
+  {
+    "id": 3,
+    "userid": "wecode3",
+    "username": "kimcode3",
+    "profileImage": "./images/sunyoung/profile_img3.png",
+    "feedImage": "./images/sunyoung/feed_img3.png",
+    "whoLikesFeed": {
+      "name": "noranbada",
+      "theCountOfLike": "님 외 101명이 좋아합니다."
+    },
+    "feedDescription": {
+      "name": "wework3",
+      "content": "제 사진을 소개합니다!!!"
+    }
+  },
+
+  {
+    "id": 4,
+    "userid": "wecode4",
+    "username": "kimcode4",
+    "profileImage": "./images/sunyoung/profile_img1.png",
+    "feedImage": "./images/sunyoung/feed_img4.png",
+    "whoLikesFeed": {
+      "name": "nkyungwon",
+      "theCountOfLike": "님 외 102명이 좋아합니다."
+    },
+    "feedDescription": {
+      "name": "wework4",
+      "content": "제 사진을 소개합니다!!!!"
+    }
+  },
+  {
+    "id": 5,
+    "userid": "wecode5",
+    "username": "kimcode5",
+    "profileImage": "./images/sunyoung/profile_img2.png",
+    "feedImage": "./images/sunyoung/feed_img5.png",
+    "whoLikesFeed": {
+      "name": "moongeesu",
+      "theCountOfLike": "님 외 103명 좋아합니다."
+    },
+    "feedDescription": {
+      "name": "wework5",
+      "content": "제 사진을 소개합니다!!!!!!!"
+    }
+  }
+]

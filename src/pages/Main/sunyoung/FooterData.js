@@ -1,4 +1,4 @@
-const FOOTER_INFO_LIST = [
+export const FOOTER_INFO_LIST = [
   {
     id: 1,
     link: '',
@@ -55,5 +55,3 @@ const FOOTER_INFO_LIST = [
     text: ' 언어 ・',
   },
 ];
-
-export default FOOTER_INFO_LIST;
