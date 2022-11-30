@@ -50,8 +50,12 @@
   margin: 5px;
   display: block;
   border: none;
-  background-color: #b5e4ff;
+  background-color: #0095f6;
   color: white;
+
+  &:disabled {
+    background-color: #b5e4ff;
+  }
 }
 
 .login.askpassword {
