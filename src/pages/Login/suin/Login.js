@@ -64,7 +64,7 @@ function LoginSuin() {
               onChange={onChangePw}
             />
           </div>
-          <div>
+          <div className="button_box">
             <button
               className="login_button"
               disabled={disabled}
@@ -73,7 +73,10 @@ function LoginSuin() {
               로그인
             </button>
           </div>
-          <a className="login_askpassword!">비밀번호를 잊으셨나요?</a>
+          {/* Link 로 바꾸어야 하나 */}
+          <div className="askpassword_box">
+            <a className="login_askpassword!">비밀번호를 잊으셨나요?</a>
+          </div>
         </div>
       </div>
     </>

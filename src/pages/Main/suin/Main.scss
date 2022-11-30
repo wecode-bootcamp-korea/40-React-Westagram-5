@@ -1,3 +1,53 @@
+.navbar {
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px 10px 20px;
+
+  img {
+    width: 27px;
+  }
+
+  p {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Lobster', cursive;
+    border-left: 2px solid black;
+    text-align: center;
+    margin-left: 10px;
+    padding-left: 10px;
+  }
+
+  .navbar_left {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar_center {
+    .search {
+      text-align: center;
+      /*왜 정가운데 아닌....?*/
+    }
+
+    .search {
+      /*돋보기 아이콘 넣기*/
+
+      /*검색창 디자인*/
+      width: 216px;
+      padding: 5px 5px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+  }
+
+  .navbar_icons {
+    img {
+      margin: 0 5px;
+    }
+  }
+}
+
 .main {
   /* justify-content: space-between; */
   align-items: flex-start;
@@ -19,6 +69,10 @@
   margin-right: 20px;
   border: 1px solid;
   width: 469px;
+
+  img {
+    width: 28px;
+  }
 }
 
 /* 게시물 상단 프로필 */
@@ -81,7 +135,7 @@
 .commentLike {
   display: flex;
   align-items: center;
-  padding: 0 10px;
+  padding: 0 10px 5px 15px;
 }
 .commentLike .img {
   margin-right: 10px;
@@ -103,6 +157,7 @@
 .contentArea {
   font-size: 14px;
   padding: 0 10px;
+  margin-bottom: 10px;
 }
 .contentArea span {
   font-weight: bold;
@@ -145,7 +200,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 20px;
+  width: 15px;
 }
 .commentLists li .heart button {
   padding: 0;
@@ -157,23 +212,24 @@
   width: 100%;
 }
 
-/* 댓글 입력창 */
-.inputComment {
-  display: flex;
-  padding: 10px;
-  border-top: 1px solid #000;
+.comment {
+  /* 댓글 입력창 */
+  .inputComment {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #000;
+  }
+  .inputComment input {
+    width: 100%;
+    border: none;
+  }
+  .inputComment button {
+    color: #3eb3ff;
+    white-space: nowrap;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+  }
 }
-.inputComment input {
-  width: 100%;
-  border: none;
-}
-.inputComment button {
-  color: #3eb3ff;
-  white-space: nowrap;
-  border: none;
-  background-color: rgba(0, 0, 0, 0);
-}
-
 /*옆*/
 .main_right {
   width: 200px;
@@ -185,7 +241,7 @@
 .aside_1 {
   display: flex;
   align-items: center;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .profile_img {
@@ -220,7 +276,7 @@
 
 .aside_2 {
   padding: 3px 7px 3px 7px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   border: 1px solid #adabaa;
   border-radius: 3px;
   font-size: 8px;
@@ -228,6 +284,7 @@
 
 .aside_2_top {
   display: flex;
+  margin: 4px;
   justify-content: space-between;
 }
 
