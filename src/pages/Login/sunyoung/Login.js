@@ -4,10 +4,12 @@ import Nav from '../../../components/Nav';
 import '../sunyoung/Login.scss';
 
 function LoginSunyoung() {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   const [userId, setUserId] = useState('');
   const [userPwd, setUserPwd] = useState('');
+
+  const isValid = userId.includes('@') && userPwd.length >= 5;
 
   const saveUserId = e => {
     setUserId(e.target.value);
@@ -15,6 +17,19 @@ function LoginSunyoung() {
 
   const saveUserPwd = e => {
     setUserPwd(e.target.value);
+  };
+
+  const handleClick = () => {
+    fetch('https://10.58.52.248:3000/auth/signin', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json;charset=utf-8' },
+      body: JSON.stringify({ userid: userId, userpwd: userPwd }),
+    })
+      .then(response => response.json())
+      .then(result => {
+        console.log(result);
+        localStorage.setItem('wecode_token', result);
+      });
   };
 
   return (
@@ -43,26 +58,28 @@ function LoginSunyoung() {
               required
             />
           </div>
-          <button
-            // 조건 2개가 충족되지 않으면 disabled={!false} 때문에 disabled={true}
-            disabled={!(userId.includes('@') && userPwd.length >= 5)}
-            onClick={() => navigate('/main-sunyoung')}
-            id="login_btn"
-            // 조건 2개중 하나라도 충족되지 않으면 오직'button_login_default'의 class만 갖는다.
-            className={`${
-              userId.includes('@') && userPwd.length >= 5
-                ? 'button_login_default active'
-                : 'button_login_default'
-            }`}
-          >
-            로그인
-          </button>
+
+          <div>
+            <button
+              disabled={isValid ? false : true}
+              onClick={handleClick}
+              className="button_login_default"
+              id="login_btn"
+              style={
+                isValid
+                  ? { backgroundColor: '#1877f2' }
+                  : { backgroundColor: '#9fcfff' }
+              }
+            >
+              로그인
+            </button>
+          </div>
 
           <br />
           <br />
           <br />
           <div className="forgetPassword">
-            <a href="ampty">비밀번호를 잊으셨나요?</a>
+            <a href="ampty"></a>
           </div>
         </form>
       </div>

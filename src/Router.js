@@ -14,6 +14,7 @@ import ComponentNav from './components/Nav';
 import MainSuin from './pages/Main/suin/Main';
 import MainHyunwuk from './pages/Main/hyunwuk/Main';
 import MainSunyoung from './pages/Main/sunyoung/Main';
+import Signup from './pages/Login/sunyoung/Signup';
 
 //route 하기
 function Router() {
@@ -27,6 +28,7 @@ function Router() {
         <Route path="/main-suin" element={<MainSuin />} />
         <Route path="/main-hyunwuk" element={<MainHyunwuk />} />
         <Route path="/main-sunyoung" element={<MainSunyoung />} />
+        <Route path="/signup" element={<Signup />} />
       </Routes>
     </BrowserRouter>
   );

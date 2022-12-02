@@ -115,16 +115,11 @@ body {
     }
   }
   .feedBottomContainer {
-    padding: 10px 10px 0 10px;
+    padding: 10px;
     background-color: $bg_white;
     .feed__description {
       .feed_text {
         width: 580px;
-        .sub_feed_text {
-          p {
-            margin-top: 5px;
-          }
-        }
       }
     }
   }
@@ -252,7 +247,7 @@ body {
     height: 180px;
     margin-bottom: 15px;
     background-color: $bg_white;
-    overflow: hidden;
+    overflow: scroll;
     .mainRightStoryTitle {
       display: flex;
       justify-content: space-between;
@@ -270,7 +265,7 @@ body {
     @include padding(10px, 10px, 10px);
     height: 150px;
     background-color: $bg_white;
-    overflow: hidden;
+    overflow: scroll;
     .mainRightStoryTitle {
       display: flex;
       justify-content: space-between;

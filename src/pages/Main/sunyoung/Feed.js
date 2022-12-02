@@ -61,7 +61,7 @@ const Feed = ({ feedInfo }) => {
         </div>
         <div className="feed__whoLikesFeed">
           <div className="profileImage">
-            <img alt="profile_image" src="./images/sunyoung/profile_img.png" />
+            <img alt="profile_image" src={feedInfo.whoLikesFeed.img} />
           </div>
           <span className="userId">{feedInfo.whoLikesFeed.name}</span>
           <span>{feedInfo.whoLikesFeed.theCountOfLike}</span>
@@ -70,11 +70,15 @@ const Feed = ({ feedInfo }) => {
         <div className="feed__description">
           &nbsp;
           <div className="feed_text">
-            <span className="userId">{feedInfo.feedDescription.name}</span>
+            <span className="userId">{feedInfo.userid}</span>
             <span className="feed_content">
               &nbsp; {feedInfo.feedDescription.content}
-              <br /> <br />
-              <br /> <br />
+            </span>
+            <br />
+            <div>{feedInfo.feedDescription.subContent}</div>
+            <br /> <br />
+            <span className="textWithOtherColor">
+              {feedInfo.feedDescription.hashTag}
             </span>
           </div>
         </div>
