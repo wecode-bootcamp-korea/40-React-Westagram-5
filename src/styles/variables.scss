@@ -1,6 +1,30 @@
-// 다른 scss 파일에서 활용할 변수들을 관리하는 파일
+$gray_border: 1px solid #e9e7e7;
+$textColorGray: gray;
+$bg_white: white;
 
-// $base-color : black;
-// 하나의 base-color 을 두고 변수화해서 여러 scss 파일을 활용하고 싶을 때 여기서 관리하면 효율적으로 관리가능
+$textButton_fontSize: 14px;
+$textButton_color: #0090f6;
 
-$text-color: red;
+@mixin flex($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin flex($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin padding($top, $right, $left) {
+  padding-top: $top;
+  padding-right: $right;
+  padding-left: $left;
+}
+
+@mixin margin($top, $right, $left) {
+  margin-top: $top;
+  margin-right: $right;
+  margin-left: $left;
+}

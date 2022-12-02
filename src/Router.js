@@ -7,13 +7,14 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import LoginSuin from './pages/Login/suin/Login';
 import LoginHyunwuk from './pages/Login/hyunwuk/Login';
-import LoginSunyeong from './pages/Login/sunyeong/Login';
+import LoginSunyoung from './pages/Login/sunyoung/Login';
 
 import ComponentNav from './components/Nav';
 
 import MainSuin from './pages/Main/suin/Main';
 import MainHyunwuk from './pages/Main/hyunwuk/Main';
-import MainSunyeong from './pages/Main/sunyeong/Main';
+import MainSunyoung from './pages/Main/sunyoung/Main';
+import Signup from './pages/Login/sunyoung/Signup';
 
 //route 하기
 function Router() {
@@ -23,10 +24,11 @@ function Router() {
         <Route path="/nav" element={<ComponentNav />} />
         <Route path="/login-suin" element={<LoginSuin />} />
         <Route path="/login-hyunwuk" element={<LoginHyunwuk />} />
-        <Route path="/login-sunyeong" element={<LoginSunyeong />} />
+        <Route path="/login-sunyoung" element={<LoginSunyoung />} />
         <Route path="/main-suin" element={<MainSuin />} />
         <Route path="/main-hyunwuk" element={<MainHyunwuk />} />
-        <Route path="/main-sunyeong" element={<MainSunyeong />} />
+        <Route path="/main-sunyoung" element={<MainSunyoung />} />
+        <Route path="/signup" element={<Signup />} />
       </Routes>
     </BrowserRouter>
   );

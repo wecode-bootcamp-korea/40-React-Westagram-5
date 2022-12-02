@@ -1,11 +1,11 @@
 import React from 'react';
 
-function ComponentNav() {
+function Nav() {
   return (
     <div>
-      <h1>test</h1>
+      <h1>.</h1>
     </div>
   );
 }
 
-export default ComponentNav;
+export default Nav;

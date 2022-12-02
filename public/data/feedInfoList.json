@@ -1,0 +1,164 @@
+[
+  {
+    "id": 1,
+    "userid": "wecode",
+    "profileImage": "./images/sunyoung/profile_img.png",
+    "feedImage": "./images/sunyoung/feed_img1.jpg",
+    "whoLikesFeed": {
+      "img": "./images/sunyoung/profile_img7.jpg",
+      "name": "daily_joyjoy",
+      "theCountOfLike": "님 외 10명이 좋아합니다."
+    },
+    "feedDescription": {
+      "content": "우리집 강아지를 소개합니다!",
+      "subContent": "",
+      "hashTag": ""
+    }
+  },
+  {
+    "id": 2,
+    "userid": "wecode",
+    "profileImage": "./images/sunyoung/profile_img1.png",
+    "feedImage": "./images/sunyoung/feed_img2.jpg",
+    "whoLikesFeed": {
+      "img": "./images/sunyoung/profile_img6.jpg",
+      "name": "a_rran",
+      "theCountOfLike": "님 외 100명이 좋아합니다."
+    },
+    "feedDescription": {
+      "content": "한라봉 3kg 35000원",
+      "subContent": "",
+      "hashTag": "#제주한라봉 #비타민충전"
+    }
+  },
+  {
+    "id": 3,
+    "userid": "wecode3",
+    "profileImage": "./images/sunyoung/profile_img2.png",
+    "feedImage": "./images/sunyoung/feed_img3.png",
+    "whoLikesFeed": {
+      "img": "./images/sunyoung/profile_img5.jpg",
+      "name": "noranbada",
+      "theCountOfLike": "님 외 101명이 좋아합니다."
+    },
+    "feedDescription": {
+      "content": "구찌에서 새로운 향수 '구찌 폴로라 고저스 가드니아 오 드 퍼퓸'을 선보였습니다. 피크와 골드가 더해진 패키지가 아름다워요. 이름처렁 플로럴 계열의 향입니다. ",
+      "subContent": "100ml 사이즈는 20만 1,000원, 온라인 스토어에서만 단독 판매하는 50ml 사이즈는 14만 3,000원입니다.",
+      "hashTag": "#구찌뷰티 #구찌향수 #내돈내산"
+    }
+  },
+
+  {
+    "id": 4,
+    "userid": "wecode4",
+    "profileImage": "./images/sunyoung/profile_img3.jpg",
+    "feedImage": "./images/sunyoung/feed_img4.jpg",
+    "whoLikesFeed": {
+      "img": "./images/sunyoung/profile_img4.png",
+      "name": "nkyungwon",
+      "theCountOfLike": "님 외 102명이 좋아합니다."
+    },
+    "feedDescription": {
+      "content": "영장목 사람상과 긴팔원숭이과에 속하는 유인원. 기번(Gibbon)이라는 영어 이름으로 흔히 알려져 있으며, 총 1과 4속 17종. 각각 긴팔원술이속, 큰긴팔원숭이속, 볏긴팔원숭이속, 흰눈썹긴팔원숭이속으로 나뉘어진다. 저래봬도 침팬지, 오랑우탄, 고릴라, 보노보처럼 유인원에 속한다. 유인원에 속하기 때문에, 유인원을 제외한 영장류를 의미하는 '원숭이'라는 단어를 이름에 쓰는 게 엄밀히는 맞지 않다.",
+      "subContent": "",
+      "hashTag": "#긴팔원숭이 #Gibbon"
+    }
+  },
+  {
+    "id": 5,
+    "userid": "wecode5",
+    "profileImage": "./images/sunyoung/profile_img1.png",
+    "feedImage": "./images/sunyoung/feed_img5.jpg",
+    "whoLikesFeed": {
+      "img": "./images/sunyoung/profile_img3.jpg",
+      "name": "moongeesu",
+      "theCountOfLike": "님 외 103명 좋아합니다."
+    },
+    "feedDescription": {
+      "content": "이건 뭐지? 호박인가?",
+      "subContent": "",
+      "hashTag": ""
+    }
+  },
+  {
+    "id": 6,
+    "userid": "wecode1",
+    "profileImage": "./images/sunyoung/profile_img.png",
+    "feedImage": "./images/sunyoung/feed_img7.jpg",
+    "whoLikesFeed": {
+      "img": "./images/sunyoung/profile_img2.png",
+      "name": "daily_joyjoy",
+      "theCountOfLike": "님 외 10명이 좋아합니다."
+    },
+    "feedDescription": {
+      "content": "자주가는 단골 카페",
+      "subContent": "",
+      "hashTag": ""
+    }
+  },
+  {
+    "id": 7,
+    "userid": "wecode2",
+    "profileImage": "./images/sunyoung/profile_img1.png",
+    "feedImage": "./images/sunyoung/feed_img8.jpg",
+    "whoLikesFeed": {
+      "img": "./images/sunyoung/profile_img4.png",
+      "name": "a_rran",
+      "theCountOfLike": "님 외 100명이 좋아합니다."
+    },
+    "feedDescription": {
+      "content": "물 맑은 곳에서 스노쿨링 하고싶다 ",
+      "subContent": "",
+      "hashTag": ""
+    }
+  },
+  {
+    "id": 8,
+    "userid": "wecode3",
+    "profileImage": "./images/sunyoung/profile_img2.png",
+    "feedImage": "./images/sunyoung/feed_img1.jpg",
+    "whoLikesFeed": {
+      "img": "./images/sunyoung/profile_img3.jpg",
+      "name": "noranbada",
+      "theCountOfLike": "님 외 101명이 좋아합니다."
+    },
+    "feedDescription": {
+      "content": "왈왈",
+      "subContent": "",
+      "hashTag": ""
+    }
+  },
+
+  {
+    "id": 9,
+    "userid": "wecode4",
+    "profileImage": "./images/sunyoung/profile_img3.jpg",
+    "feedImage": "./images/sunyoung/feed_img9.jpg",
+    "whoLikesFeed": {
+      "img": "./images/sunyoung/profile_img2.png",
+      "name": "nkyungwon",
+      "theCountOfLike": "님 외 102명이 좋아합니다."
+    },
+    "feedDescription": {
+      "content": "이번 크리스마스는 위코드에서...",
+      "subContent": "",
+      "hashTag": ""
+    }
+  },
+  {
+    "id": 10,
+    "userid": "wecode5",
+    "profileImage": "./images/sunyoung/profile_img1.png",
+    "feedImage": "./images/sunyoung/feed.jpg",
+    "whoLikesFeed": {
+      "img": "./images/sunyoung/profile_img1.png",
+      "name": "moongeesu",
+      "theCountOfLike": "님 외 103명 좋아합니다."
+    },
+    "feedDescription": {
+      "content": " 빵지순례 필수코스 12가지로 구성된 마들렌 전시회를 볼 수 있는 도식화는 요즘 상수동에서 항상 웨이팅 가득한 핫한 카페입니다. 음료도 상큼한 에이드부터 크림라떼 등 종류도 다양하니 다들 도식화 뿌시러가주세요.",
+      "subContent": "위치 : 도식화 상수 - 서울 마포구 와우산로17길 19-9 1층",
+      "hashTag": "#상수카페 #디저트카페 #마들렌맛집"
+    }
+  }
+]
